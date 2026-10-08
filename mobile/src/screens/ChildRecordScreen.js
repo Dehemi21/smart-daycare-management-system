@@ -16,7 +16,7 @@ export default function ChildRecordScreen() {
     const handleSave = () => {
 
         if (name === "" || age === "" || guardian === "") {
-            alert("Please enter all details");
+            alert("Please enter all details"); 
             return;
         }
 

@@ -7,7 +7,7 @@ import {
     StyleSheet
 } from "react-native";
 
-export default function StaffSchedulingScreen() {
+export default function StaffSchedulingScreen() { 
 
     const [staffName, setStaffName] = useState("");
     const [classroom, setClassroom] = useState("");

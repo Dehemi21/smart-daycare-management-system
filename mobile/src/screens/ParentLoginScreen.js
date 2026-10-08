@@ -25,7 +25,7 @@ export default function ParentLoginScreen() {
         <View style={styles.container}>
 
             <Text style={styles.title}>
-                Parent / Guardian Login
+                Parent / Guardian Login Screen
             </Text>
 
             <TextInput

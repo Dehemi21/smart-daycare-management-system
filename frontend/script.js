@@ -1,5 +1,5 @@
 
-/* Smart Daycare Management System */
+/* Smart Daycare Management System */ 
 
 /* Demo Login */
 const loginForm = document.getElementById("loginForm");

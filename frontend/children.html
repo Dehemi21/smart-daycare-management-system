@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Daycare - Child Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Daycare Management System</h1>
+        <p>Child Records Management</p>
+    </header>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="children.html">Child Records</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+    <main>
+        <h2>Manage Child Records</h2>
+        <p>Add and view daycare children's information.</p>
+
+        <section class="form-container">
+            <h3>Add New Child</h3>
+
+            <form id="childForm">
+                <label for="childName">Child Name</label>
+                <input type="text" id="childName"
+                       placeholder="Enter child's name" required>
+
+                <label for="childAge">Age</label>
+                <input type="number" id="childAge"
+                       placeholder="Enter age" min="1" max="12" required>
+
+                <label for="guardianName">Parent/Guardian Name</label>
+                <input type="text" id="guardianName"
+                       placeholder="Enter guardian's name" required>
+
+                <label for="guardianContact">Contact Number</label>
+                <input type="tel" id="guardianContact"
+                       placeholder="Enter contact number" required>
+
+                <button type="submit">Add Child</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Registered Children</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Child Name</th>
+                        <th>Age</th>
+                        <th>Parent/Guardian</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+
+                <tbody id="childrenTable">
+                    <!-- Child records will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <p id="childMessage"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
